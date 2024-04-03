@@ -35,7 +35,6 @@ jobs:
 
       # Upload artifact from frontend directory
       - name: Upload artifact
-        working-directory: ./frontend
         uses: actions/upload-artifact@v2
         with:
           name: frontend
