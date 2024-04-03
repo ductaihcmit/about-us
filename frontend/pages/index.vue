@@ -3,7 +3,7 @@
     <h3 class="text-center text-cyan-500 text-3xl font-semibold">
       Tài Tài Website
       <br />
-      Comming Soon
+      Comming Soonaaa
     </h3>
     <!-- <DevOnly>
       <a-space wrap>
