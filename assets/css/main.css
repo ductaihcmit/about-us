@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: BeVietnamPro;
+  src: url("../fonts/BeVietnamPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: BeVietnamSemiBold;
+  src: url("../fonts/BeVietnamPro-SemiBold.ttf");
+}
+
+* {
+  font-family: BeVietnamPro;
+}
+
+.font-semibold,
+.font-bold {
+  font-family: BeVietnamSemiBold !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
