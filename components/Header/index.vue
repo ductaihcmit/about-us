@@ -28,10 +28,10 @@ const toggle = () => {
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 #header {
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
 }
-</style>
+</style> -->
