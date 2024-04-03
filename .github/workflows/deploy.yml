@@ -36,8 +36,8 @@ jobs:
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
-     - name: Build and deploy
-        run: |
+      - name: Build and deploy
+        run:
           npm install
           npm run build
           touch dist/.nojekyll # create .nojekyll file
