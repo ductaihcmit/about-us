@@ -36,6 +36,18 @@ jobs:
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
+     - name: Build and deploy
+        run: |
+          npm install
+          npm run build
+          touch dist/.nojekyll # create .nojekyll file
+          echo 'dist/.nojekyll' >> .gitignore # ignore .nojekyll file in git
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add dist && git commit -m "Deploy to GitHub Pages" || true
+          git subtree split --prefix dist -b gh-pages
+          git push -f origin gh-pages:gh-pages
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
