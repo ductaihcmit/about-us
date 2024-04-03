@@ -23,7 +23,8 @@ jobs:
         run: ls
       # Navigate to the frontend directory
       - name: Navigate to frontend directory
-        run: cd ./frontend
+        run:
+          working-directory: ./frontend
       # Check current folder
       - name: Check current directory
         run: ls
