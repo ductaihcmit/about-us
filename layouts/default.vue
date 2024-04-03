@@ -4,6 +4,7 @@
     <div class="circle-blur-right"></div>
     <div class="relative z-[1]">
       <Header />
+      123
       <slot />
       <Footer />
     </div>
