@@ -18,7 +18,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
-
+      # Check current folder
+      - name: Check current directory
+        run: ls
       # Navigate to the frontend directory
       - name: Navigate to frontend directory
         run: cd ./frontend
