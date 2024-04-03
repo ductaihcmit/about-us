@@ -10,37 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # Enable Corepack
       - run: corepack enable
-
-      # Setup Node.js environment
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
-
-      # Remove node module
-      - name: Remove module
-        working-directory: ./frontend
-        run: rm -rf package-lock.json node_modules
-
       # Pick your own package manager and build script
-      - name: Install dependencies
-        working-directory: ./frontend
-        run: npm install
-
-      - name: Build frontend
-        working-directory: ./frontend
-        run: npx nuxt build --preset github_pages
-
-      - name: CD nè,
-        run: cd ./frontend
-
-      # Upload artifact from frontend directory
+      - run: npm install
+      - run: npx nuxt build --preset github_pages
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: frontend
           path: ./.output/public
   # Deployment job
   deploy:
