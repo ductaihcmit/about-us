@@ -14,10 +14,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
-        # Pick your own package manager and build script
-        working-directory: ./frontend
+
+      # Navigate to the frontend directory
+      - name: Navigate to frontend directory
+        run: cd frontend
+
+      # Pick your own package manager and build script
       - run: npm install
-        working-directory: ./frontend
       - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
