@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       ],
     },
     // baseURL: "/about-us",
-    buildAssetsDir: "/about-us",
+    // buildAssetsDir: "/about-us",
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ["ant-design-vue/dist/reset.css", "~/assets/css/main.css"],
