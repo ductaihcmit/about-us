@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "production": "nuxt build && node .output/server/index.mjs"
+    "production": "nuxt build && node .output/server/index.mjs",
+    "deploy": "gh-pages -d dist -t true"
   },
   "dependencies": {
     "@ant-design-vue/nuxt": "^1.4.1",

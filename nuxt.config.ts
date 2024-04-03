@@ -3,11 +3,10 @@ export default defineNuxtConfig({
     head: {
       meta: [
         // <meta name="viewport" content="width=device-width, initial-scale=1">
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
       title: "About Us",
-      script: [
-      ],
+      script: [],
       link: [
         // <link rel="stylesheet" href="https://myawesome-lib.css">
       ],
@@ -17,7 +16,7 @@ export default defineNuxtConfig({
       ],
       noscript: [
         // <noscript>JavaScript is required</noscript>
-      ]
+      ],
     },
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -38,7 +37,7 @@ export default defineNuxtConfig({
     shim: false,
   },
 
-  modules: ["@ant-design-vue/nuxt", '@vueuse/nuxt', '@nuxt/image'],
+  modules: ["@ant-design-vue/nuxt", "@vueuse/nuxt", "@nuxt/image"],
 
   antd: {
     extractStyle: true,
