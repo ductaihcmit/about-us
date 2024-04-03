@@ -19,8 +19,7 @@ export default defineNuxtConfig({
       ],
     },
     baseURL: process.env.NODE_ENV === "production" ? "/about-us" : "",
-    buildAssetsDir:
-      process.env.NODE_ENV === "production" ? "/about-us/_nuxt/" : "",
+    buildAssetsDir: process.env.NODE_ENV === "production" ? "/about-us/" : "",
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
   nitro: {
