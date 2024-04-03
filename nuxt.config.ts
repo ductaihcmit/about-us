@@ -18,17 +18,9 @@ export default defineNuxtConfig({
         // <noscript>JavaScript is required</noscript>
       ],
     },
-    baseURL: process.env.NODE_ENV === "production" ? "/about-us" : "",
-    buildAssetsDir: process.env.NODE_ENV === "production" ? "/about-us/" : "",
+    // baseURL: "/about-us",
+    buildAssetsDir: "/about-us",
     // pageTransition: { name: 'page', mode: 'out-in' }
-  },
-  nitro: {
-    runtimeConfig: {
-      app: {
-        baseURL: process.env.NODE_ENV === "production" ? "/about-us" : "",
-        buildAssetsDir: process.env.NODE_ENV === "production" ? "/_nuxt" : "",
-      },
-    },
   },
   css: ["ant-design-vue/dist/reset.css", "~/assets/css/main.css"],
   postcss: {
