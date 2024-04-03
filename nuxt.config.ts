@@ -18,18 +18,19 @@ export default defineNuxtConfig({
         // <noscript>JavaScript is required</noscript>
       ],
     },
-    baseURL: "/base",
-    buildAssetsDir: "/base/_nuxt/",
+    baseURL: process.env.NODE_ENV === "development" ? "/about-us" : "",
+    buildAssetsDir:
+      process.env.NODE_ENV === "development" ? "/about-us/_nuxt/" : "",
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
-  nitro: {
-    runtimeConfig: {
-      app: {
-        baseURL: "/base",
-        buildAssetsDir: "_nuxt",
-      },
-    },
-  },
+  // nitro: {
+  //   runtimeConfig: {
+  //     app: {
+  //       baseURL: "/about-us",
+  //       buildAssetsDir: "_nuxt",
+  //     },
+  //   },
+  // },
   css: ["ant-design-vue/dist/reset.css", "~/assets/css/main.css"],
   postcss: {
     plugins: {
