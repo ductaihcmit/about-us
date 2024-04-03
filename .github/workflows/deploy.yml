@@ -7,35 +7,35 @@ on:
       - main
 jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-    # Enable Corepack
-    - run: corepack enable
+      # Enable Corepack
+      - run: corepack enable
 
-    # Setup Node.js environment
-    - uses: actions/setup-node@v3
-      with:
-        node-version: "20"
+      # Setup Node.js environment
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
 
-    # Navigate to the frontend directory
-    - name: Navigate to frontend directory
-      run: cd frontend
+      # Navigate to the frontend directory
+      - name: Navigate to frontend directory
+        run: cd frontend
 
-    # Pick your own package manager and build script
-    - name: Install dependencies
-      run: npm install
+      # Pick your own package manager and build script
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build frontend
-      run: npx nuxt build --preset github_pages
+      - name: Build frontend
+        run: npx nuxt build --preset github_pages
 
-    # Upload artifact from frontend directory
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: frontend
-        path: ./frontend/.output/public
+      # Upload artifact from frontend directory
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: frontend
+          path: ./frontend/.output/public
   # Deployment job
   deploy:
     # Add a dependency to the build job
