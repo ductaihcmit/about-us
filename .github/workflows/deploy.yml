@@ -18,6 +18,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
+
+      # Remove node module
+      - name: Remove module
+        working-directory: ./frontend
+        run: rm -rf package-lock.json node_modules
+
       # Pick your own package manager and build script
       - name: Install dependencies
         working-directory: ./frontend
