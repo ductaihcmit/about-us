@@ -22,7 +22,9 @@ jobs:
       # Navigate to the frontend directory
       - name: Navigate to frontend directory
         run: cd frontend
-
+      # Check current folder
+      - name: Check current directory
+        run: ls
       # Pick your own package manager and build script
       - name: Install dependencies
         run: npm install
