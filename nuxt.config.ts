@@ -18,8 +18,8 @@ export default defineNuxtConfig({
         // <noscript>JavaScript is required</noscript>
       ],
     },
-    baseURL: "/about-us",
-    // buildAssetsDir: "/about-us",
+    baseURL: "/about-us/",
+    // buildAssetsDir: "about-us",
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ["ant-design-vue/dist/reset.css", "~/assets/css/main.css"],
