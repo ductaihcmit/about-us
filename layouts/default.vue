@@ -1,10 +1,9 @@
 <template>
-  <div style="height: 3000px">
+  <div class="bg-white dark:bg-black h-full">
     <div class="circle-blur-top"></div>
     <div class="circle-blur-right"></div>
     <div class="relative z-[1]">
       <Header />
-      123
       <slot />
       <Footer />
     </div>

@@ -18,8 +18,8 @@ export default defineNuxtConfig({
         // <noscript>JavaScript is required</noscript>
       ],
     },
-    baseURL: "/about-us/",
-    buildAssetsDir: "assets",
+    baseURL: process.env.NODE_ENV === 'production' ? "/about-us/" : "",
+    buildAssetsDir: process.env.NODE_ENV === 'production' ? "assets" : "",
     // pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ["ant-design-vue/dist/reset.css", "~/assets/css/main.css"],
@@ -39,8 +39,17 @@ export default defineNuxtConfig({
     shim: false,
   },
 
-  modules: ["@ant-design-vue/nuxt", "@vueuse/nuxt", "@nuxt/image"],
-
+  modules: ["@ant-design-vue/nuxt", "@vueuse/nuxt", "@nuxt/image", '@nuxtjs/color-mode'],
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
   antd: {
     extractStyle: true,
   },
