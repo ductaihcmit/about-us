@@ -3,8 +3,8 @@
     <div class="fixed min-w-[600px] mx-auto">
       <div class="mt-4 lg:mt-8 rounded-full shadow-sm py-3 px-6 bg-white">
         <div class="flex items-center justify-between">
-          <p class="mb-0 font-semibold text-color-secondary-light">Jan</p>
-          <div class="flex items-center gap-6">
+          <p class="mb-0 font-semibold text-color-secondary-light">Social</p>
+          <!-- <div class="flex items-center gap-6">
             <div>
               <nuxt-link to="/">
                 <p
@@ -23,9 +23,9 @@
                 </p>
               </nuxt-link>
             </div>
-          </div>
+          </div> -->
           <!-- <button @click="toggleDarkMode">Toggle Dark Mode</button> -->
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-4">
             <nuxt-link to="/auth/login">
               <p class="mb-0 text-sm font-semibold text-color-secondary-light">
                 Đăng nhập
