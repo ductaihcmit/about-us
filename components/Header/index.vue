@@ -28,10 +28,10 @@
           <div class="flex items-center gap-4">
             <nuxt-link to="/auth/login">
               <p class="mb-0 text-sm font-semibold text-color-secondary-light">
-                Đăng nhập
+                Đăng nhập/Đăng ký
               </p>
             </nuxt-link>
-            <a-button
+            <!-- <a-button
               shape="circle"
               @click="toggleDarkMode()"
               class="flex items-center justify-center"
@@ -44,7 +44,7 @@
                 class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
                 v-show="colorMode.value === 'dark'"
               />
-            </a-button>
+            </a-button> -->
           </div>
         </div>
       </div>
