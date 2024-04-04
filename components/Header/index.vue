@@ -25,20 +25,27 @@
             </div>
           </div>
           <!-- <button @click="toggleDarkMode">Toggle Dark Mode</button> -->
-          <a-button
-            shape="circle"
-            @click="toggleDarkMode()"
-            class="flex items-center justify-center"
-          >
-            <MoonIcon
-              class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
-              v-show="colorMode.value === 'light'"
-            />
-            <SunIcon
-              class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
-              v-show="colorMode.value === 'dark'"
-            />
-          </a-button>
+          <div class="flex items-center gap-2">
+            <nuxt-link to="/auth/login">
+              <p class="mb-0 text-sm font-semibold text-color-secondary-light">
+                Đăng nhập
+              </p>
+            </nuxt-link>
+            <a-button
+              shape="circle"
+              @click="toggleDarkMode()"
+              class="flex items-center justify-center"
+            >
+              <MoonIcon
+                class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
+                v-show="colorMode.value === 'light'"
+              />
+              <SunIcon
+                class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
+                v-show="colorMode.value === 'dark'"
+              />
+            </a-button>
+          </div>
         </div>
       </div>
     </div>

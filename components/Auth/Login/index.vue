@@ -64,7 +64,12 @@
       </nuxt-link>
       </div> -->
       <div class="mt-6">
-        <a-button type="primary" block size="large">Đăng nhập</a-button>
+        <button
+          @click="handleLogin()"
+          class="transition-all ease-in font-semibold bg-color-secondary-light hover:bg-color-gray-dark dark:bg-color-secondary-dark text-color-main-light hover:text-color-secondary-light dark:text-color-main-dark h-10 w-full rounded-full"
+        >
+          Đăng nhập
+        </button>
       </div>
       <div class="mt-6">
         <p
@@ -91,6 +96,10 @@ const user = ref({
 });
 
 const isVisiblePassword = ref(false);
+
+const handleLogin = () => {
+  navigateTo("/");
+};
 </script>
 
 <style scoped></style>

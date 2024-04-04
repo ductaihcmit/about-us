@@ -5,7 +5,7 @@
     <!-- <div class="circle-blur-top"></div>
     <div class="circle-blur-right"></div> -->
     <div class="max-w-[1280px] mx-auto">
-      <div class="grid grid-cols-2 rounded-3xl min-h-[600px]">
+      <div class="grid grid-cols-2 rounded-3xl min-h-[600px] shadow-2xl">
         <div class="h-full">
           <img
             src="/public/images/social/auth-social.gif"
