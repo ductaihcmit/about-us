@@ -4,7 +4,9 @@
     <div class="circle-blur-right"></div> -->
     <div class="relative z-[1]">
       <Header />
-      <slot />
+      <div class="m-8 lg:mt-10 max-w-[1280px] mx-auto">
+        <slot />
+      </div>
       <Footer />
     </div>
   </div>

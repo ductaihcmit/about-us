@@ -5,7 +5,7 @@ export default defineNuxtConfig({
         // <meta name="viewport" content="width=device-width, initial-scale=1">
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
-      title: "About Us",
+      title: "Tiat Social",
       script: [],
       link: [
         // <link rel="stylesheet" href="https://myawesome-lib.css">
