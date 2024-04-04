@@ -1,14 +1,14 @@
 <template>
   <div class="h-40 flex justify-center">
     <div class="fixed min-w-[600px] mx-auto">
-      <div class="mt-4 lg:mt-8 rounded-full shadow-sm py-3 px-6" id="header">
+      <div class="mt-4 lg:mt-8 rounded-full shadow-sm py-3 px-6 bg-white">
         <div class="flex items-center justify-between">
-          <p class="mb-0 font-semibold text-black dark:text-white">Jan</p>
+          <p class="mb-0 font-semibold text-color-secondary-light">Jan</p>
           <div class="flex items-center gap-6">
             <div>
               <nuxt-link to="/">
                 <p
-                  class="mb-0 text-sm font-semibold text-black dark:text-white"
+                  class="mb-0 text-sm font-semibold text-color-secondary-light"
                 >
                   Home
                 </p>
@@ -17,7 +17,7 @@
             <div>
               <nuxt-link to="/contact-us">
                 <p
-                  class="mb-0 text-sm font-semibold text-black dark:text-white"
+                  class="mb-0 text-sm font-semibold text-color-secondary-light"
                 >
                   Contact Us
                 </p>
@@ -30,8 +30,14 @@
             @click="toggleDarkMode()"
             class="flex items-center justify-center"
           >
-            <MoonIcon class="w-5 h-5" v-show="colorMode.value === 'light'" />
-            <SunIcon class="w-5 h-5" v-show="colorMode.value === 'dark'" />
+            <MoonIcon
+              class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
+              v-show="colorMode.value === 'light'"
+            />
+            <SunIcon
+              class="w-5 h-5 text-color-icon-light dark:text-color-icon-dark"
+              v-show="colorMode.value === 'dark'"
+            />
           </a-button>
         </div>
       </div>

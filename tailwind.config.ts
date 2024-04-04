@@ -12,34 +12,21 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                // Bg
-                "bg-main": {
-                    light: "#FFF",
-                    dark: "#313131",
+                "color-main": {
+                    light: "#f9f9f9",
+                    dark: "#b9b9b9"
                 },
-                "bg-placeholder": {
-                    light: "#ECECEC",
-                    dark: "#424242",
+                "color-gray": {
+                    light: "#f1f1f1",
+                    dark: "#b1b1b1"
                 },
-                "bg-green": {
-                    light: "#F5FBF8",
-                    dark: "#105343",
+                "color-icon": {
+                    light: "#eda358",
+                    dark: "#b26313"
                 },
-                "bg-yellow": {
-                    light: "#FFF8D2",
-                    dark: "#723B13",
-                },
-                "bg-blue": {
-                    light: "#F3F6FF",
-                    dark: "#112F8A",
-                },
-                "bg-red": {
-                    light: "#FDF4F4",
-                    dark: "#6A0909",
-                },
-                "bg-disabled": {
-                    light: "#F3F3F3",
-                    dark: "#5D5D5D",
+                "color-secondary": {
+                    light: "#030400",
+                    dark: "#ffffff"
                 },
             }
         },
