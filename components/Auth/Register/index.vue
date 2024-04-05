@@ -1,23 +1,13 @@
 <template>
   <div class="min-w-[300px]">
-    <h1
-      class="text-center text-2xl text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-    >
-      Đăng ký
-    </h1>
-    <p
-      class="mb-0 mt-1 text-center text-sm text-color-secondary-light dark:text-color-secondary-dark"
-    >
+    <h1 class="text-center text-2xl text-color-secondary-light">Đăng ký</h1>
+    <p class="mb-0 mt-1 text-center text-sm text-color-secondary-light">
       Tham gia mạng xã hội với chúng tôi
     </p>
     <div class="mt-10">
       <div>
         <div>
-          <span
-            class="text-sm text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-          >
-            E-mail:
-          </span>
+          <span class="text-sm text-color-secondary-light"> E-mail: </span>
         </div>
         <a-input
           v-model:value="user.email"
@@ -28,11 +18,7 @@
       </div>
       <div class="mt-4">
         <div>
-          <span
-            class="text-sm text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-          >
-            Password
-          </span>
+          <span class="text-sm text-color-secondary-light"> Password </span>
         </div>
         <div class="relative">
           <a-input
@@ -56,11 +42,7 @@
       </div>
       <div class="mt-4">
         <div>
-          <span
-            class="text-sm text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-          >
-            Re-password
-          </span>
+          <span class="text-sm text-color-secondary-light"> Re-password </span>
         </div>
         <div class="relative">
           <a-input
@@ -86,7 +68,7 @@
     <!-- <div class="mt-6">
       <nuxt-link>
           <p
-          class="mb-0 text-right text-sm text-color-secondary-light dark:text-color-secondary-dark"
+          class="mb-0 text-right text-sm text-color-secondary-light "
         >
           Quên mật khẩu?
         </p>
@@ -94,15 +76,13 @@
       </div> -->
     <div class="mt-6">
       <button
-        class="transition-all ease-in font-semibold bg-color-secondary-light hover:bg-color-gray-dark dark:bg-color-secondary-dark text-color-main-light hover:text-color-secondary-light dark:text-color-main-dark h-10 w-full rounded-full"
+        class="transition-all ease-in font-semibold bg-color-secondary-light hover:bg-color-gray-dark text-color-main-light hover:text-color-secondary-light h-10 w-full rounded-full"
       >
         Đăng ký
       </button>
     </div>
     <div class="mt-6">
-      <p
-        class="mb-0 text-sm text-color-secondary-light dark:text-color-secondary-dark"
-      >
+      <p class="mb-0 text-sm text-color-secondary-light">
         Nếu đã có tài khoản?
         <nuxt-link
           to="/auth/login"

@@ -14,7 +14,7 @@
     >
       <p class="mb-0 text-lg font-semibold">Bài viết</p>
       <button
-        class="flex items-center transition-all ease-in bg-color-secondary-light hover:bg-color-gray-dark dark:bg-color-secondary-dark text-color-main-light hover:text-color-secondary-light dark:text-color-main-dark px-4 py-2 rounded-lg"
+        class="flex items-center transition-all ease-in bg-color-secondary-light hover:bg-color-gray-dark text-color-main-light hover:text-color-secondary-light px-4 py-2 rounded-lg"
       >
         <FunnelIcon class="w-5 h-5" />
         <span class="ml-2 text-sm"> Bộ lọc </span>

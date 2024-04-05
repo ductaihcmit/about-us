@@ -1,21 +1,15 @@
 <template>
   <div class="min-w-[300px]">
-    <h1
-      class="text-center text-2xl text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-    >
+    <h1 class="text-center text-2xl text-color-secondary-light font-semibold">
       Đăng nhập
     </h1>
-    <p
-      class="mb-0 mt-1 text-center text-sm text-color-secondary-light dark:text-color-secondary-dark"
-    >
+    <p class="mb-0 mt-1 text-center text-sm text-color-secondary-light">
       Đăng nhập tài khoản để trải nghiệm dịch vụ
     </p>
     <div class="mt-10">
       <div>
         <div>
-          <span
-            class="text-sm text-color-secondary-light dark:text-color-secondary-dark font-semibold"
-          >
+          <span class="text-sm text-color-secondary-light font-semibold">
             E-mail:
           </span>
         </div>
@@ -66,15 +60,13 @@
       <div class="mt-6">
         <button
           @click="handleLogin()"
-          class="transition-all ease-in font-semibold bg-color-secondary-light hover:bg-color-gray-dark dark:bg-color-secondary-dark text-color-main-light hover:text-color-secondary-light dark:text-color-main-dark h-10 w-full rounded-full"
+          class="transition-all ease-in font-semibold bg-color-secondary-light hover:bg-color-gray-dark text-color-main-light hover:text-color-secondary-light h-10 w-full rounded-full"
         >
           Đăng nhập
         </button>
       </div>
       <div class="mt-6">
-        <p
-          class="mb-0 text-sm text-color-secondary-light dark:text-color-secondary-dark"
-        >
+        <p class="mb-0 text-sm text-color-secondary-light">
           Nếu chưa có tài khoản?
           <nuxt-link
             to="/auth/register"
