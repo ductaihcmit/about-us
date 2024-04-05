@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     shim: false,
   },
 
-  modules: ["@ant-design-vue/nuxt", "@vueuse/nuxt", "@nuxt/image", '@nuxtjs/color-mode'],
+  modules: ["@ant-design-vue/nuxt", "@vueuse/nuxt", "@nuxt/image", '@nuxtjs/color-mode', '@pinia/nuxt'],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found

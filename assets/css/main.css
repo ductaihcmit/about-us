@@ -24,3 +24,7 @@
 #__nuxt {
   height: 100%;
 }
+
+.ant-modal-content {
+  padding: 0px !important;
+}

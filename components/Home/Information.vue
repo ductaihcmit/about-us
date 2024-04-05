@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-color-secondary-dark p-6 rounded-lg">
+  <div class="bg-color-secondary-dark p-4 rounded-lg">
     <div class="flex items-center gap-3">
       <HeartIcon
         class="w-6 h-6 text-color-icon-light dark:text-color-icon-dark"
